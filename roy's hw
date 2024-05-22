@@ -1,0 +1,58 @@
+Question 1 
+
+print ("Enter Password: ")
+read = input()
+print("Password: ")
+read2 = input()
+if read == read2:
+    print("correct password!")
+else:  
+    print("Wrong Password!")
+
+Question 2
+
+print("Enter a number: ")
+read = input()
+number = int(read)
+print("Enter your name: ")
+name = input()
+for _ in range(number):
+    print(name)
+
+Question 3
+
+num = False
+while not num:
+    answer = input("Write a positive interger ")
+    if answer == '-1':
+        num = True
+        print("Not a positive interger")
+
+Question 4
+
+def is_prime(number):
+    if number <= 1:
+        return False
+    for i in range(2, int(number**0.5) + 1):
+        if number % i == 0:
+            return False
+    return True
+num = (number you want to know if it is prime or not)
+if is_prime(num):
+    print(f"{num} is a prime number.")
+else:
+    print(f"{num} is not a prime number.")
+
+(It was too hard I asked my friend)
+
+Question 5
+
+for num in range (0,101):
+    if num % 3 == 0 and num % 5 == 0:
+        print("FizzBuzz")
+    elif num % 3 == 0:
+        print("Fizz")
+    elif num % 5 == 0:
+        print("Buzz")
+    else:
+        print(num)
